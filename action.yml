@@ -1,0 +1,33 @@
+name: "Generate Release"
+description: "Generates a release for the project, including changelog and release assets."
+author: "Devops Mario Fribla Gonzalez"
+inputs:
+  artifact-prefix:
+    description: "Name of the release asset to be generated."
+    required: true
+  artifact-extension:
+    description: "Extension of the release asset to be generated."
+    required: true
+  release-version:
+    description: "The version of the release to be generated."
+    required: true
+  prerelease:
+    description: "Indicates if the release is a pre-release."
+    required: true
+  assets:
+    description: "List of assets to include in the release."
+    required: true
+  token:
+    description: "GitHub token to authenticate the action."
+    required: false
+    default: "${{ github.token }}"
+outputs:
+  prerelease-version:
+    description: "The version when is a prerelease."
+    value: ${{ steps.main.outputs.prerelease-version }}
+runs:
+  using: "node20"
+  main: "dist/index.js"
+branding:
+  color: "green"
+  icon: "package"

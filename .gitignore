@@ -1,0 +1,9 @@
+*
+!**/
+!.gitignore
+!*.yml
+!*.js
+!*.json
+!*.ps1
+!*.md
+node_modules/
