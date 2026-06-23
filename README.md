@@ -58,5 +58,6 @@ Para realizar cambios en el repositorio, deberas generar la versión de distribu
 - Una vez en el GitHub, ReCrear o crear un nuevo el Release para que los cambios sean considerados.
 
 ---
-DevOps Mario Fribla Gonzalez
+Mario Fribla
 
+***DevOps***
